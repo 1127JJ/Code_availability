@@ -1,0 +1,33 @@
+Quality control:
+FastQC: http://www.bioinformatics.babraham.ac.uk/projects/fastqc/. Version: 0.18.0. 
+Parameters: -o --extract.
+
+RNA-Seq read alignment:
+HISAT2: http://ccb.jhu.edu/software/hisat2/index.shtml. Version: 2.1.0.
+Parameters: --rna-strandness RF.
+
+Differentially expressed transcripts (DEGs) Analysis:
+DESeq2: http://www.bioconductor.org/packages/release/bioc/html/DESeq2.html.
+
+Identification of exist miRNA:
+miRbase: http://microrna.sanger.ac.uk/ . Release 22. 
+
+ATAC-Seq read alignment:
+Bowtie2: http://bowtie-bio.sourceforge.net/bowtie2/index.shtml. Version: 2.2.8.
+Parameters: -v 0 –k 1. –X 2000
+
+ATAC-seq heatmap visualization:
+deepTools: https://pypi.python.org/pypi/deepTools. Version: 3.5.1. 
+Parameters: -b 2000 -a 2000 --skipZeros --regionBodyLength 6000 --missingDataAsZero -o --outFileNameMatrix --outFileSortedRegions.
+
+ATAC-seq insert fragment analysis
+ATACseqQC: https://bioconductor.org/packages/release/bioc/html/ATACseqQC.html.
+
+ATAC-seq peak calling:
+MACS2: https://github.com/taoliu/MACS/. Version: 2.1.2. 
+Parameters: --nomodel --shift -100 --extsize 200 -B -q 0.05”.
+
+
+ATAC-seq peak related genes annotation
+ChIPseeker: http://www.bioconductor.org/packages/release/bioc/html/ChIPseeker.html. Version: v1.16.1.
+
